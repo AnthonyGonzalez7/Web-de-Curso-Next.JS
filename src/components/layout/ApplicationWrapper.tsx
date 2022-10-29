@@ -17,7 +17,7 @@ export const ApplicationWrapper: FC<PropsWithChildren <Tprops>> = ({
         <Head>
             <title>{title} | Autos Panamá</title>
             {description && <meta name="description" content={description} />}
-            <link rel="icon" href="/favicon.ico" />
+            <link rel="icon" href="/images/logo.png" />
             <link
               rel="stylesheet"
               href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"

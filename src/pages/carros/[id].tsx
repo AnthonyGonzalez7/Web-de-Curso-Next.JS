@@ -3,6 +3,7 @@ import React from "react";
 import { CarsList, ICars } from "../../components/CarsList/CarsList";
 import { ApplicationWrapper } from "../../components/layout/ApplicationWrapper";
 import 'animate.css';
+import Image from 'next/image'
 
 interface TProps {
     car: ICars;
@@ -10,14 +11,7 @@ interface TProps {
   
 
 const CarDetail: NextPage<TProps> = ({ car }) =>{
-    
-            var Poster1 = <script>{car.Poster}</script>
-            var Poster2 = <script>{car.Poster2}</script>
-            var Poster3 = <script>{car.Poster3}</script>
-            var Poster4 = <script>{car.Poster4}</script>
-            
     return (
-    
         <ApplicationWrapper title={car.Title}>
             <div className="bg-[url('/images/background3.png')]">
                 <br />
@@ -49,10 +43,6 @@ const CarDetail: NextPage<TProps> = ({ car }) =>{
                                 alt="image" />
                         </div>
                     </div>
-
-
-
-
                 </div>
                 <div className="container ml-20 animate__animated animate__fadeInRight">
                     <h4>Motor: {car.Engine}</h4>
@@ -71,7 +61,6 @@ const CarDetail: NextPage<TProps> = ({ car }) =>{
                     </div>
                     <br />
                 </div>
-
                 </div>
             </div>
         </ApplicationWrapper>

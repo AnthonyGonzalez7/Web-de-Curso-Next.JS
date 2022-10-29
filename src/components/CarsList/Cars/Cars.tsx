@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React, { FC } from "react";
 import { ICars } from "../CarsList";
+import Image from 'next/image'
 
 interface TProps {
     car: ICars;
