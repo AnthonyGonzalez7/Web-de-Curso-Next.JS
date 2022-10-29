@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import React,{FC, PropsWithChildren} from "react";
 import { Nav } from "../common/Nav";
 
@@ -17,8 +18,8 @@ export const ApplicationWrapper: FC<PropsWithChildren <Tprops>> = ({
         <Head>
             <title>{title} | Autos Panamá</title>
             {description && <meta name="description" content={description} />}
-            <link rel="icon" href="/images/logo.png" />
-            <link
+            <Link rel="icon" href="/images/logo.png" />
+            <Link
               rel="stylesheet"
               href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
             />
